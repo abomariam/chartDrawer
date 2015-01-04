@@ -1,0 +1,135 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="cssfile.css"/>
+<title>
+Contact Us
+</title>
+<script src="jsfile.js">
+</script>
+</head>
+<body>
+
+<div id="header" align="center">
+<ul>
+	<a href="index.html">
+	<li>
+		Home
+	</li>
+	</a>
+	<a href="about.html">
+	<li>
+		About Us
+	</li>
+	</a>
+	<a href="contact.html">
+	<li style="background-color:#3b5998;">
+		Contact Us
+	</li>
+	</a>
+		<a href="snap.html">
+	<li>
+		Manual
+	</li>
+	</a>
+
+	<a href="drawpage.html">
+	<li>
+		Draw
+	</li>
+	</a>
+</ul>
+</div>
+<center>
+	<div id="contactcontent">
+	<form>
+	<fieldset>
+	<legend id="contact_legend"> Contact Information </legend>
+	<table  width="800" align="top">
+	<tr>
+	<td colspan=2>
+	<span id="message">
+	</span>
+	</td>
+	</tr>
+	<tr>
+		<th class="headtxt">
+			Name
+		</th>
+		<td>
+			<input type="text" placeholder=" Your name" id="nametxt" onblur="testname()" style="font-family:Lucida Handwriting;"/>
+		</td>
+		<td>
+			<span id="name_check">
+			
+			</span>
+		</td>
+	</tr>
+		<tr>
+		<th class="headtxt">
+			Email
+		</th>
+		<td>
+			<input type="text"placeholder=" Your email" id="emailtxt" onblur="testemail()" style="font-family:Lucida Handwriting;"/>
+		</td>
+		<td>
+			<span id="email_check">
+			
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<th class="headtxt">
+			Subject
+		</th>
+		<td>
+			<input type="text" placeholder=" Subject" id="subject" style="font-family:Lucida Handwriting;"/>
+		</td>
+	</tr>
+		<tr>
+		<th class="headtxt">
+			Message
+		</th>
+		<td >
+			<textarea id="txtarea"></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"align="center">
+		<input type="button" value="Send" id="submitsend" onclick="messagedone()"/> &nbsp &nbsp
+		<input type="reset" value="Cancel" id="resetcontact" onclick="resetmessage()"/>
+		</td>
+	</tr>
+	
+	</table>
+	</fieldset>
+	</form>
+	<form>
+		<fieldset>
+		<legend id="contact_legend">Contact Us On</legend>
+	<table>
+	
+		<tr>
+		<td>
+		<a href="https://www.facebook.com/groups/764284870307377/" target="_blank">  
+		<img src="images/flogo.png" width="200" height="150"/>
+		</a>
+		</td>
+		<td>
+		<a href="https://twitter.com/Chart_Drawer" target="_blank">
+		<img src="images/tlogo.gif" width="200" height="150"/>
+		</a>
+		</td>
+		<td>
+		<a href="https://plus.google.com/u/0/111659619136503769156/posts">
+		<img src="images/glogo.gif" width="120" height="100"/>
+		</a>
+		</td>
+		
+		</tr>
+		</table>
+		</fieldset>
+		</form>
+	</div>	
+</center>
+</body>
+</html>

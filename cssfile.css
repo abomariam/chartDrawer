@@ -1,0 +1,349 @@
+
+body
+{
+background-color:#3b5998;
+}
+#header
+{
+   
+	height:70px;
+	width:100%;
+	background-color:gray;
+	text-padding:10px;
+	position:fixed;
+	top:-.1px;
+	z-index:5;
+
+	
+}
+
+#header ul 
+{
+	list-style: none;
+    margin: 0px;
+    padding: 0px;
+	
+	
+}
+#header ul li
+{
+	display:inline;
+	padding:20px;
+	padding-top:50px;
+	padding-right:50px;
+	font-family:Brush Script MT;
+	font-size:40;
+	border-radius:45px;
+	
+	
+	
+}
+
+#header ul li:hover
+{
+	background-color:#5d6c8c;
+	
+	
+}
+#header a
+{
+	text-decoration:none;
+	color:white;
+
+}
+#header a:hover
+{
+	
+	color:#d3630d;
+
+}
+
+#indexcontent
+{
+		width:92%;
+	height:105%;
+	background-color:#3b5998;
+	left:60px;
+	position:absolute;
+	top:80px;
+	display:inline-block;
+}
+#content
+{
+	
+	width:92%;
+	height:100%;
+	background-color:#f1f1f1;
+	left:60px;
+	position:absolute;
+	top:80px;
+	display:inline-block;
+}
+#doclist li strong
+{
+	color:#3b5998;
+	font-family:Times New Roman;
+}
+
+strong
+{
+		font-family:Lucida Handwriting;
+		font-size:30;
+}
+#contactcontent
+{
+	
+	width:92%;
+	height:90%;
+	background-color:#f1f1f1;
+	left:60px;
+	position:absolute;
+	top:80px;
+	display:inline-block;
+}
+.headtxt
+{
+	color:#3b5998;
+	font-family:Lucida Handwriting;
+	font-size:15;
+}
+#left 
+{
+	width:61%;
+	height:80%;
+	background-color:#c4cde0;
+	position:absolute;
+	left:10px;
+	top:5px;
+	overflow:scroll;
+	
+}
+#forcode
+{
+	background-color:#3b5998;
+	width:61%;
+	height:20%;
+	position:absolute;
+	top:575px;
+	padding-top:10px;
+}
+#right
+{
+	background-color:#aaaaff;
+	width:38%;
+	height:98%;
+	position:absolute;
+	right:-12px;
+	top:5px;
+	border-radius:15px;
+	padding-left:10px;
+	
+	
+}
+
+#legend_draw
+{
+	width:16%;
+	height:98%;
+	margin-left:575px;
+	background-color:#c4cde0;
+	position:relative;
+	top:5px;
+	right:241px;
+	overflow:auto;
+	
+}
+
+
+
+
+#resetcontact,#submitsend
+{
+background-image:url('images/btn.png');
+height:32;
+width:76;
+border-radius:10px;
+font-weight:bold;
+color:#dc2a72;
+font-size:17;
+
+}
+
+#result
+{
+background-color:#f1f1f1;
+width:90%;
+height:380px;
+overflow:auto;
+position:absloute;
+}
+#Property_table
+{
+	width:100%;
+}
+#content input[type="text"] ,#contactcontent input[type="text"]
+{
+	width:600px;
+	height:30px;
+	border-radius:5px;
+}
+#result input[type="text"]
+{
+	width:100px;
+	height:20px;
+	border-radius:5px;
+}
+#fbtn1, #fbtn2 ,#fbtn3,#fbtn4
+{
+	border-radius:15px;
+	border-color:gray;
+	background-color:#0080ff;
+	background-image:url('images/addbtn.png');
+	width:110px;
+	height:35px;
+	/*font-family:Lucida Handwriting;*/
+	color:#dc2a72;
+	font-weight:bold;
+	font-size:15;
+
+}
+#chartMenu
+{
+	border-radius:15px;
+	width:140px;
+	height:30px;
+	font-family:Lucida Handwriting;
+
+}
+
+#contact_legend
+{
+	font-size:30;
+	color:#3b5998;
+	font-family:Lucida Handwriting;
+	font-weight:bold;
+}
+
+#txtarea
+{
+	width:600px;
+	height:150px;
+	border-radius:10px;
+}
+
+#abouttb
+{				
+	position:absolute;
+	width:100%;
+	height:20%;
+}
+#paragraph
+{
+	font-size:20;
+	font-family:Lucida Handwriting;
+	color:white;
+	text-decoration: underline;
+	 font-weight: bold;
+}
+#para 
+{
+	font-weight:bold;
+	font-size:20;
+	color:#eec640;	
+	
+}
+
+
+h1
+{
+	font-family:Lucida Handwriting;
+	font-size:40;
+
+	color:#e47297;
+}
+a
+{
+	text-decoration:none;
+	
+}
+a h1:hover
+{
+		color:#00a5bf;
+}
+h2
+{
+	font-family:Vivaldi;
+	font-size:65;
+	font-weight:bold;
+	color:#3b5998;
+}
+#data
+{
+	left:20px;	
+}
+#d2
+{
+
+	left:430px;
+}
+#d3
+{
+	left:840px;	
+	
+}
+#data,#d2,#d3
+{
+	top:320px;
+	background-color:#3b5998;
+	position:absolute;
+	border-radius:30px;
+	-webkit-animation: myfirst 3s; 
+	-moz-animation: myfirst 5s;
+	animation: myfirst 5s;
+	height:360px;
+	width:350px;
+}
+@-webkit-keyframes myfirst {
+    0% {background-color:#f1f1f1;transform:translatex(-500px);}
+    100% {background-color:#3b5998;transform:translatex(50px) .2s;}
+	
+}
+@keyframes myfirst {
+    0% {background-color:#f1f1f1;transform:translatex(-500px);}
+    100% {background-color:#3b5998;transform:translatex(50px) .2s;}
+	
+}
+#d_legend
+{
+	color:#d1da33;
+	font-size:30;
+	font-family:Lucida Handwriting;
+}
+#picdiv1 
+{
+	position:absolute;
+	width:25%;
+	height:50%;
+	background-color:#3b5998;
+	left:300px;
+}
+
+#picdiv2
+{
+	position:absolute;
+	width:25%;
+	height:50%;
+	background-color:#3b5998;
+	left:670px;
+}
+#chartimg
+{
+	transition:all .75s;
+}
+
+#chartimg:hover
+{
+	width:350;
+	height:350;
+	transform: rotatez(-5deg);
+}
