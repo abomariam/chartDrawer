@@ -1,0 +1,11 @@
+Bonus
+------
+
+1 - Using SVG graph.
+
+2 - using JQuery.
+
+3 - CSS3 Animation
+.
+5 - HTML5 Tags
+.

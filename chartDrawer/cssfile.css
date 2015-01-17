@@ -82,13 +82,13 @@ background-color:#3b5998;
 #doclist li strong
 {
 	color:#3b5998;
-	font-family:Times New Roman;
-}
+	font-family:Times New Roman;}
 
 strong
 {
 		font-family:Lucida Handwriting;
 		font-size:30;
+		
 }
 #contactcontent
 {
@@ -101,6 +101,15 @@ strong
 	top:80px;
 	display:inline-block;
 }
+/*#txtdiv
+{
+	background-color:#f1f1f1;
+	width:99%;
+	position:absolute;
+	
+	top:480px;
+	height:24%;
+}*/
 .headtxt
 {
 	color:#3b5998;
@@ -124,7 +133,7 @@ strong
 	width:61%;
 	height:20%;
 	position:absolute;
-	top:575px;
+	top:600px;
 	padding-top:10px;
 }
 #right
@@ -176,6 +185,11 @@ width:90%;
 height:380px;
 overflow:auto;
 position:absloute;
+}
+#inputTable
+{
+	float: left;
+	z-index: -100;
 }
 #Property_table
 {
@@ -293,7 +307,7 @@ h2
 }
 #data,#d2,#d3
 {
-	top:320px;
+	top:300px;
 	background-color:#3b5998;
 	position:absolute;
 	border-radius:30px;
@@ -318,6 +332,11 @@ h2
 	color:#d1da33;
 	font-size:30;
 	font-family:Lucida Handwriting;
+	
+}
+#content fieldset
+{
+	height:330px;
 }
 #picdiv1 
 {
@@ -344,6 +363,6 @@ h2
 #chartimg:hover
 {
 	width:350;
-	height:350;
+	height:300;
 	transform: rotatez(-5deg);
 }

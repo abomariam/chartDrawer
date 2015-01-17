@@ -54,6 +54,7 @@ Draw
 		
 			<input class="10" type="button" value="Show Code" onclick="showCode()" id="fbtn1"/>
 			<input class="10" type="button" value="Show Chart" onclick="showChart()" id="fbtn2"/>
+			
 		</div>
 		<div id="legend_draw" style="display:none">
 			Legend
@@ -74,39 +75,39 @@ Draw
 			<br/>
 			<input class="10" type="button" value="Add Row" onclick="addRow()" id="fbtn3"/>
 			<input id="fbtn4" type="button" value="Add Column"  onclick="addColumn()" />
-		
+			<b style="font-family:Lucida Handwriting;">Chart Background </b> <input type="color" value="#dddddd" onchange="setBackGround(event)"/>
+
 		<br/>
 			<!-- <input type="checkbox"/> Legend--><p></p>
 			
 		<div id="result" onmouseup="showMenu(event);"onContextMenu="return false;" >
-			
-		<table id="inputTable" border>
+		 <table id="inputTable" border>
 		 <tr class="0">
 		 <td class="0">        </td>
-		 <td class="1"><input type="text" value="Series 1" /> </td>
+		 <td class="1"><input type="text" value="Series 1" onmouseup="deleteColumnMenu(event)" /> </td>
 		 </tr>
 		 <tr class="1">
-		 <td class="0"><input type="text" value="Category 1"/> </td>
+		 <td class="0"><input type="text" value="Val 1" id="x" onmouseup="deleteRowMenu(event)" /> </td>
 		 <td class="1"><input type="text" value="10"/></td>
 		 </tr>
 		  <tr class="2">
-		 <td class="0"><input type="text" value="Category 2"/></td>
+		 <td class="0"><input type="text" value="Val 2" onmouseup="deleteRowMenu(event)"/></td>
 		 <td class="1"><input type="text" value="20"/></td>
 		 </tr>
 		  <tr class="3">
-		 <td class="0"><input type="text" value="Category 3"/></td>
+		 <td class="0"><input type="text" value="Val 3" onmouseup="deleteRowMenu(event)"/></td>
 		 <td class="1"><input type="text" value="30"/></td>
 		 </tr>
 		  <tr class="4">
-		 <td class="0"><input type="text" value="Category 4"/></td>
+		 <td class="0"><input type="text" value="Val 4" onmouseup="deleteRowMenu(event)"/></td>
 		 <td class="1"><input type="text" value="40"/></td>
 		 </tr>
 		  <tr class="5">
-		 <td class="0"><input type="text" value="Category 5"/></td>
+		 <td class="0"><input type="text" value="Val 5" onmouseup="deleteRowMenu(event)"/></td>
 		 <td class="1"><input type="text" value="50"/></td>
 		 </tr>
 		 <tr id="color_row">
-		 <td class="0"><input type="text" readonly value=""/></td>
+		 <td class="0"><input type="text" readonly value="Color"/></td>
 		 <td class="1"><input type="color" value="#0000ff" onchange="setColor(event)"/></td>
 		</tr>
 		 </table> 

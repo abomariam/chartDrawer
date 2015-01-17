@@ -43,7 +43,8 @@ ChartDrawer.NewChart = function(div1){
     
     
     function deleteSeries(no){
-        values = values.slice(0,no).concat(values.slice(no+1,values.length))
+        values = values.slice(0,no).concat(values.slice(no+1,values.length));
+        colors = colors.slice(0,no).concat(colors.slice(no+1,colors.length));
     }
     function setSeries(no, series) {
         values[no] = series;
@@ -56,9 +57,6 @@ ChartDrawer.NewChart = function(div1){
     
     function setChartType(type){
         chartType = type;
-        if (type == ChartType.Column) {
-            x_count++;
-        }
         chartDrawer();
     }
     function setXLabels (labels){
@@ -72,10 +70,12 @@ ChartDrawer.NewChart = function(div1){
         }
         values[values.length] = series;
         chartDrawer();
+		return values.length -1;
     }
     
     function chartDrawer(){
         
+		
         b.innerHTML = "";
         svg1.innerHTML = "";
         svg1.setAttribute("height",height);
@@ -85,6 +85,7 @@ ChartDrawer.NewChart = function(div1){
         
         Recalculate_Diminsions();
         Recalculate_factors(values);
+		
         prepareSVG(svg1,x_count);
         
         DrawXLabels(svg1,XLabels);
@@ -106,11 +107,17 @@ ChartDrawer.NewChart = function(div1){
             width = b.offsetWidth;
         }
         function Recalculate_factors(points) {
-            
+            x_count = 5;
             for(var i = 0; i<points.length; i++){
-                x_count = Math.max(x_count,points[i].length);
+                x_count = Math.max(x_count,points[i].length,XLabels.length);
             }
             x_count = x_count > 5 ? x_count : 5;
+			
+			if (chartType == ChartType.Column) {
+				x_count++;
+				x_count = x_count > 6 ? x_count : 6;
+
+			}
             x_factor = (width - (left_padding + right_padding)) / (x_count-1);
             
             
@@ -130,7 +137,7 @@ ChartDrawer.NewChart = function(div1){
             var x_axies = createLine(left_padding,height - bottom_padding,width - right_padding,height - bottom_padding,attributes);
             
             
-            points_count = points_count || 5;
+            //points_count = points_count || 5;
             
             attributes["stroke-dasharray"]="2,2";
             attributes["opacity"] = ".3";
@@ -275,7 +282,7 @@ ChartDrawer.NewChart = function(div1){
             setChartType : setChartType,
             setBackGround : setBackGround,
             setSeries:setSeries,
-			deleteSeries:deleteSeries
+            deleteSeries: deleteSeries
         };
     
 };
