@@ -1,0 +1,10 @@
+Description:
+------------
+
+chartDrawer is a javscript library used to draw charts using SVG.
+It can be used to draw line charts and column charts.
+
+
+Notes:
+------
+- The Site is tested and is perfectly working in chrome.
